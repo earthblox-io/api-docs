@@ -13,7 +13,7 @@ Once you have a list of projects, a new run can be created using a project id an
 Other parameters can be set if you would like include geometry in any table outputs using `includes_geometry = true` and if you would like to generate a thumbnail of the output `generate_thumbnails: true`. These are also not required. 
 
 ```bash 
-curl --request POST --location 'https://dev.api.earthblox.io/api/alpha/runs/' \
+curl --request POST --location 'https://api.earthblox.io/v1beta/runs/' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer %BEARER_TOKEN%' \
 --data '{ "type": "template", "project_id": "%ID%",
@@ -30,7 +30,7 @@ curl --request POST --location 'https://dev.api.earthblox.io/api/alpha/runs/' \
 An example with the substitution fields populated can be seen below.
 
 ```bash 
-curl --location 'https://dev.api.earthblox.io/api/alpha/runs/' \
+curl --location 'https://api.earthblox.io/v1beta/runs/' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciO…' \
 --data '{ "type": "template", "project_id":"S0rssl3ao8MvsV0gendJ_20230613", 
@@ -85,7 +85,7 @@ Using the above `run_id`, check the status of your run.
 
 ```bash 
 
-curl --location 'https://dev.api.earthblox.io/api/alpha/runs/{run_id}/status' \
+curl --location 'https://api.earthblox.io/v1beta/runs/{run_id}/status' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
 
@@ -105,7 +105,7 @@ A status such as this will be returned. It is likely the first request will retu
 A list of available runs can be returned. 
 
 ```bash
-curl --location 'https://dev.api.earthblox.io/api/alpha/runs/' \
+curl --location 'https://api.earthblox.io/v1beta/runs/' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
 
@@ -123,7 +123,7 @@ This will return information about the runs such as status, id and the time the 
 The run status and results can be returned for a specific run. 
 
 ```bash 
-curl --location 'https://dev.api.earthblox.io/api/alpha/runs/{run_id}' \
+curl --location 'https://api.earthblox.io/v1beta/runs/{run_id}' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
 

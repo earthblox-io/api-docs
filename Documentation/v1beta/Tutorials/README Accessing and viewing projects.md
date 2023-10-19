@@ -9,7 +9,7 @@ Examples of both curl requests and the python client are provided.
 All your available projects can be accessed and listed with the following request. This will return details such as the `project_id`, `name` and `description`.
 
 ```bash 
-curl --location 'https://dev.api.earthblox.io/api/alpha/projects/' \
+curl --location 'https://api.earthblox.io/v1beta/projects/' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
 
@@ -23,7 +23,7 @@ print(projects)
 The `project_id` returned by the previous request can be used to get a specific project and list the same details.
 
 ```bash 
-curl --location 'https://dev.api.earthblox.io/api/alpha/projects/{project_id}' \
+curl --location 'https://api.earthblox.io/v1beta/projects/{project_id}' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
 

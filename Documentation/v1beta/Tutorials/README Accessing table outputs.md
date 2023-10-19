@@ -9,7 +9,7 @@ Examples of both curl requests and the python client are provided.
 The table outputs from a run can be retrieved with the following request:
 
 ```bash 
-curl --location 'https://dev.api.earthblox.io/api/alpha/runs/{run_id}/outputs' \
+curl --location 'https://api.earthblox.io/v1beta/runs/{run_id}/outputs' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
 

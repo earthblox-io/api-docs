@@ -9,7 +9,7 @@ Links to the reference docs can be found throughout this tutorial.
 The map layers for a specified run can be retrieved with the following request:
 
 ```bash
-curl --location 'https://dev.api.earthblox.io/api/alpha/runs/{run_id}/layers' \
+curl --location 'https://api.earthblox.io/v1beta/runs/{run_id}/layers' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
 
@@ -61,7 +61,7 @@ See the [documentation](https://developers.google.com/maps/documentation/javascr
 Once you have a web map set up, the `mapURL` can be used as an `ImageMapType` layer. See the example below. 
 
 ```javascript
-const mapURL = '%mapURL'; 
+const mapURL = '%mapURL%'; 
 const mapURLLayer = new google.maps.ImageMapType({
     getTileUrl: function (coord, zoom) {
         return mapURL.replace('{z}', zoom).replace('{x}', coord.x).replace('{y}', coord.y);

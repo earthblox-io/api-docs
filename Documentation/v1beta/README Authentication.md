@@ -26,7 +26,7 @@ echo -n 'user@earthblox.io:password' | base64
 The generated hash can then be used to generate a `client_id` and `client_secret`: 
 
 ```bash
-curl --location 'https://dev.api.earthblox.io/services/auth/client' \
+curl --location 'https://api.earthblox.io/services/auth/client' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Basic %HASH%' \
 --data '{"name":"EBX api", "description": "EBX api"}'
@@ -37,7 +37,7 @@ A name and description are required.
 The `client_id` and `client_secret` do not expire and are used to generate a short-lived(1 hour) token. When your token expires, a new one can be generated using the same credentials.
 
 ```bash 
-curl --location 'https://dev.api.earthblox.io/services/oauth/token' \
+curl --location 'https://api.earthblox.io/services/oauth/token' \
 --header 'Content-Type: application/json' \
 --data '{"client_id":"%CLIENT_ID","client_secret":"%CLIENT_SECRET%"}'
 ```
