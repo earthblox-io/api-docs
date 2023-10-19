@@ -1,0 +1,22 @@
+ # Accessing table outputs 
+
+ In order to complete any of the requests in these tutorials, a bearer token is required. See the [Authentication page](../README%20Authentication.md) for more details on how to generate one. 
+
+Links to the reference docs can be found throughout this tutorial. 
+
+Examples of both curl requests and the python client are provided. 
+
+The table outputs from a run can be retrieved with the following request:
+
+```bash 
+curl --location 'https://dev.api.earthblox.io/api/alpha/runs/{run_id}/outputs' \
+--header 'Authorization: Bearer %BEARER_TOKEN%'
+```
+
+```python
+#Python example
+outputs = run.outputs
+print(outputs)
+```
+
+[Get run outputs reference](https://dev.api.earthblox.io/docs#/runs/get_run_outputs_api_alpha_runs__run_id__outputs_get)
