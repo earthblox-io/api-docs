@@ -13,7 +13,7 @@ curl --location 'https://api.earthblox.io/v1beta/runs/{run_id}/layers' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
 
-[Get map outputs reference](https://dev.api.earthblox.io/docs#/runs/get_run_layers_api_alpha_runs__run_id__layers_get)
+[Get map outputs reference](https://api.earthblox.io/docs#/runs/get_run_layers_api_alpha_runs__run_id__layers_get)
 
 
 The results of this request can be taken and used to display the map tiles elsewhere with the `mapURL` and `bbox`. 

@@ -18,7 +18,7 @@ curl --location 'https://api.earthblox.io/v1beta/projects/' \
 projects = ebx.list_projects()
 print(projects)
  ```
-[List projects reference](https://dev.api.earthblox.io/docs#/projects/list_projects_api_alpha_projects__get)
+[List projects reference](https://api.earthblox.io/docs#/projects/list_projects_api_alpha_projects__get)
 
 The `project_id` returned by the previous request can be used to get a specific project and list the same details.
 
@@ -34,4 +34,4 @@ my_project = ebx.get_project(project_id)
 print(my_project)
 ```
 
-[Get project reference](https://dev.api.earthblox.io/docs#/projects/get_project_api_alpha_projects__project_id__get)
+[Get project reference](https://api.earthblox.io/docs#/projects/get_project_api_alpha_projects__project_id__get)

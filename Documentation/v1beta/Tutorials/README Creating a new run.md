@@ -77,7 +77,7 @@ print(run_id)
 
 This will return a `run_id` which can be used to check the status of the run. 
 
-[Create new run reference](https://dev.api.earthblox.io/docs#/runs/create_run_api_alpha_runs__post)
+[Create new run reference](https://api.earthblox.io/docs#/runs/create_run_api_alpha_runs__post)
 
 ## Checking the run status
 
@@ -98,7 +98,7 @@ A status such as this will be returned. It is likely the first request will retu
 
 >{"status": "completed"}
 
-[Check run status reference](https://dev.api.earthblox.io/docs#/runs/get_run_status_api_alpha_runs__run_id__status_get)
+[Check run status reference](https://api.earthblox.io/docs#/runs/get_run_status_api_alpha_runs__run_id__status_get)
 
 ## List available runs
 
@@ -116,7 +116,7 @@ print(runs)
 
 This will return information about the runs such as status, id and the time the run was started and completed at. 
 
-[List available runs reference](https://dev.api.earthblox.io/docs#/runs/list_runs_api_alpha_runs__get)
+[List available runs reference](https://api.earthblox.io/docs#/runs/list_runs_api_alpha_runs__get)
 
 ## Get a specified run
 
@@ -134,4 +134,4 @@ print(run)
 
 This will return info about the run such as the map URLs, legend and table outputs.
 
-[Get run reference](https://dev.api.earthblox.io/docs#/runs/get_run_api_alpha_runs__run_id__get)
+[Get run reference](https://api.earthblox.io/docs#/runs/get_run_api_alpha_runs__run_id__get)
