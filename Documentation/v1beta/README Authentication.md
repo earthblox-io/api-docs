@@ -1,27 +1,29 @@
 # Authentication
 
-Authenticating the EBX-API using an access token.
+Authenticating the EBX-API using an API client and access token.
 
-Please note: in order to register a new client, a user with the `api_org_admin` role is needed.
+Please note: in order to register a new API client, an Earth Blox user with the `api_org_admin` role is needed.
 
 Steps for authenticating: 
-1. Using your username and password to generate a `client_id` and `client_secret`. 
-2. Use those to generate a 1 hour token. 
+1. Use your Earth Blox username and password to generate an OAuth2 `client_id` and `client_secret`. 
+2. Use your OAuth2 Client to generate a 1 hour token. 
 3. Use this token to access the EBX API. 
 
-Examples are provided for access to the API through curl requests and through the python client. 
+Examples are provided for access to the API through REST requests using curl and through the python client.
 
-## Authenticating with curl
+The python client can be accessed from [pypi](https://pypi.org/project/ebx/) or installed with pip: <code>pip install ebx</code>
+
+## Authenticating with REST API
 
 ### Generating a hash of your username and password
 
-In order to generate a token to access the API, you must first hash your username and password using the following command : 
+In order to generate an API Client, you must first hash your regular Earth Blox username and password as below: 
 
 ```bash
 echo -n 'user@earthblox.io:password' | base64
 ```
 
-### Generating a bearer token
+### Generating OAuth2 Client credentials
 
 The generated hash can then be used to generate a `client_id` and `client_secret`: 
 
@@ -33,6 +35,8 @@ curl --location 'https://api.earthblox.io/services/auth/client' \
 ```
 
 A name and description are required.
+
+### Generating an API access token
 
 The `client_id` and `client_secret` do not expire and are used to generate a short-lived(1 hour) token. When your token expires, a new one can be generated using the same credentials. Please note,`grant type` is required and must be set to "client_credentials".
 
