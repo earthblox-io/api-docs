@@ -1,29 +1,35 @@
 # Authentication
 
 Authenticating the EBX-API using an API client and access token.
-
-Please note: in order to register a new API client, an Earth Blox user with the `api_org_admin` role is needed.
-
+ 
 Steps for authenticating: 
 1. Use your Earth Blox username and password to generate an OAuth2 `client_id` and `client_secret`. 
 2. Use your OAuth2 Client to generate a 1 hour token. 
 3. Use this token to access the EBX API. 
 
-Examples are provided for access to the API through REST requests using curl and through the python client.
+Examples are provided for access to the API through:
 
-The python client can be accessed from [pypi](https://pypi.org/project/ebx/) or installed with pip: <code>pip install ebx</code>
+[REST API](#Authenticating-with-REST-API) 
+
+[PYTHON CLIENT](#Authenticating-with-the-python-client)
+
+
+The python client can be accessed from [pypi](https://pypi.org/project/ebx/) or installed with pip: 
+
+```
+pip install ebx
+```
 
 ## Authenticating with REST API
 
-### Generating a hash of your username and password
+#### Generating a hash of your username and password
 
 In order to generate an API Client, you must first hash your regular Earth Blox username and password as below: 
 
 ```bash
 echo -n 'user@earthblox.io:password' | base64
 ```
-
-### Generating OAuth2 Client credentials
+#### Generating OAuth2 Client credentials
 
 The generated hash can then be used to generate a `client_id` and `client_secret`: 
 
@@ -33,10 +39,9 @@ curl --location 'https://api.earthblox.io/services/auth/client' \
 --header 'Authorization: Basic %HASH%' \
 --data '{"name":"EBX api", "description": "EBX api"}'
 ```
-
 A name and description are required.
 
-### Generating an API access token
+#### Generating an API access token
 
 The `client_id` and `client_secret` do not expire and are used to generate a short-lived(1 hour) token. When your token expires, a new one can be generated using the same credentials. Please note,`grant type` is required and must be set to "client_credentials".
 
@@ -50,7 +55,14 @@ The API can now be accessed with the token, see the tutorials on how to retrieve
 
 ## Authenticating with the python client
 
-### Registering a new client
+Install python lib
+
+```
+pip install ebx
+```
+
+
+#### Registering a new client
 
 To register a new client and generate a `client_id` and `client_secret`: 
 
@@ -65,7 +77,8 @@ oauthClientModel.save()
 ```
 By default the details are saved in a file within .ebx/.ebx.auth.json in the current working directory.
 
-### Authenticating 
+#### Authenticating 
+
 
 There are several ways to authenticate with the API through the python client: 
 
