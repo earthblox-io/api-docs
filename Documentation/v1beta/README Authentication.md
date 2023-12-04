@@ -7,7 +7,7 @@ Steps for authenticating:
 2. Use your OAuth2 Client to generate a 1 hour token. 
 3. Use this token to access the EBX API. 
 
-Examples are provided for access to the API through:
+Example authentication flows are provided for:
 
 [REST API](#Authenticating-with-REST-API) 
 
