@@ -10,7 +10,10 @@
 
 ### Reference 
 1. [REST API](https://api.earthblox.io/docs)
-2. [Python API] TODO
+2. TODO [Python API]
 
-### Example Apps
-1. 
+### Examples
+1. [Adding map layer in Google Maps (JS)](https://github.com/earthblox-io/api-docs/tree/main/GoogleMaps)
+2. [Adding map layer in Leaflet (JS)](https://github.com/earthblox-io/api-docs/tree/main/leaflet)
+3. [Adding map layer with OpenLayers (JS)](https://github.com/earthblox-io/api-docs/tree/main/openlayers)
+4. TODO: [Adding map Layer with Leafmap (python)]
