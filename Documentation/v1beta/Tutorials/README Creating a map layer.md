@@ -1,31 +1,41 @@
 
-## Get map layers from a completed run
+### Get map layers
 
-REST:
+#### REST
 
 ```bash
 curl --location 'https://api.earthblox.io/v1beta/runs/{run_id}/layers' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
-[API reference](https://api.earthblox.io/docs#/runs/get_run_layers_api_alpha_runs__run_id__layers_get)
+[REST API reference](https://api.earthblox.io/docs#/runs/get_run_layers_api_alpha_runs__run_id__layers_get)
 
 
-PYTHON
+#### Python Client
 
 ```
 run = ebx.get_run(run_id)
 #print all map layers
 print(run.layers)
-# print map url for a specific layer and time period:
-print(run.layers[0]['time_periods'][0]['mapURL'])
 ```
 
+### Get map url
 
 The results of this request can be taken and used to display the map tiles elsewhere with the `mapURL` and `bbox`.
 
+#### REST
 
-[!NOTE] 
-mapURLs expire after ~24hrs
+```
+TODO
+```
+
+#### Pthon client
+```
+# get map url for a specific layer and time period:
+map_url = run.layers[0]['time_periods'][0]['mapURL']
+```
+
+> [!NOTE]
+> mapURLs expire after ~24hrs
 
 ## Using layers in web maps
 ### OpenLayers
