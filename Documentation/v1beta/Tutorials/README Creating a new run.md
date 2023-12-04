@@ -52,8 +52,9 @@ print(run_id)
 from datetime import datetime
 project_id = ""
 
-start_date = ""
-end_date = ""
+
+start_date = datetime(2019, 1, 1).isoformat()
+end_date = datetime(2020, 12, 31).isoformat()
 
 study_area = {
     "type": "FeatureCollection",
