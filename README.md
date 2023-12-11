@@ -6,6 +6,7 @@
   3. [Creating a new run / Workflow execution](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/Tutorials/README%20Creating%20a%20new%20run.md)
   4. [Accessing table and chart outputs](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/Tutorials/README%20Accessing%20table%20outputs.md)
   5. [Map Layers](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/Tutorials/README%20Creating%20a%20map%20layer.md)
+  6. [Save and enable project as API endpoint](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/Tutorials/README%20Enable%20API%20for%20a%20project.md)
 
 
 ### Reference 
