@@ -68,12 +68,13 @@ To register a new client and generate a `client_id` and `client_secret`:
 
 ```python
 import ebx
+from ebx.config import ServiceClientConfig
 
 email = 'user@earthblox.io'
 password = 'password'
 name = 'EBX API'
 oauthClientModel = ebx.create_oauth_client(email, password, name)
-oauthClientModel.save()
+oauthClientModel.save(ServiceClientConfig())
 ```
 By default the details are saved in a file within .ebx/.ebx.auth.json in the current working directory.
 
