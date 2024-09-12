@@ -7,7 +7,7 @@
 curl --location 'https://api.earthblox.io/v1beta/runs/{run_id}/layers' \
 --header 'Authorization: Bearer %BEARER_TOKEN%'
 ```
-[REST API reference](https://api.earthblox.io/docs#/runs/get_run_layers_api_alpha_runs__run_id__layers_get)
+[REST API reference](https://api.earthblox.io/docs#/runs/get_run_layers_v1beta_runs__run_id__layers_get)
 
 
 #### Python Client
@@ -24,11 +24,23 @@ The results of this request can be taken and used to display the map tiles elsew
 
 #### REST
 
-```
-TODO
-```
+Responses will be in json format
 
-#### Pthon client
+```json
+{"data":{
+    "layers":[
+        {
+            "time_periods":[
+                {
+                    "mapURL":"http://..."
+                }
+            ]
+        }
+    ]
+    }
+}
+
+#### Python client
 ```
 # get map url for a specific layer and time period:
 map_url = run.layers[0]['time_periods'][0]['mapURL']

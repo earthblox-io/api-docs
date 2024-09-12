@@ -19,4 +19,4 @@ outputs = run.outputs
 print(outputs)
 ```
 
-[Get run outputs reference](https://api.earthblox.io/docs#/runs/get_run_outputs_api_alpha_runs__run_id__outputs_get)
+[Get run outputs reference](https://api.earthblox.io/docs#/runs/get_run_tables_v1beta_runs__run_id__tables_get)
