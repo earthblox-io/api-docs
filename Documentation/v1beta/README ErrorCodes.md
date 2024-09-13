@@ -25,8 +25,9 @@ Upon error with a http status code a json payload will be the response in this f
 Runs are asynchronous, when you create a run it is placed into a queue and processed when there is an available worker to process the request. 
 After some time the status of the run will change and it could have caused an error. Upon an error state and error code is returned
 
+- 0 : no error occurred
 - 1 : indicates the workflow timed out, try again with a bigger scale or smaller area.
-- 2 : user error. something in the workflow is not configured correctly or no data was returned from the workflow. should not be retried without fixing the error in the application.
+- 2 : user error. something in the workflow is not configured correctly or no data was returned from the workflow. Should not be retried without fixing the error in the application.
 - 3 : authentication error: something went wrong checking access to the run. do not try again
 - 4 : internal error: do not try again.
 - 5 : internal error: do not try again.

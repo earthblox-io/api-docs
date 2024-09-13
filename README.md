@@ -1,4 +1,4 @@
-## api-docs
+## Earth Blox API
 
 ### API Getting Started Tutorial
   1. [Authentication](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/README%20Authentication.md)
@@ -8,10 +8,11 @@
   5. [Map Layers](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/Tutorials/README%20Creating%20a%20map%20layer.md)
   6. [Save and enable project as API endpoint](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/Tutorials/README%20Enable%20API%20for%20a%20project.md)
 
-
 ### Reference 
 1. [REST API](https://api.earthblox.io/docs)
 2. TODO [Python API]
+3. [Error Codes](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/Tutorials/README%20ErrorCodes.md)
+4. [Change Log](https://github.com/earthblox-io/api-docs/blob/main/CHANGELOG.md)
 
 ### Examples
 1. [Adding map layer in Google Maps (JS)](https://github.com/earthblox-io/api-docs/tree/main/GoogleMaps)
