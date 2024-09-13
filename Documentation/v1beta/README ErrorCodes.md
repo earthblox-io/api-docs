@@ -33,8 +33,11 @@ After some time the status of the run will change and it could have caused an er
 - 5 : internal error: do not try again.
 
 
-You may get the error_code by getting the run via its id.
+You may get the error_code by getting the run via its id using this endpoint below
 [Get run reference](https://api.earthblox.io/docs#/runs/get_run_v1beta_runs__run_id__get)
+
+
+This is an example error response from requesting a run. Note that the status will be `error` and the `error_code` will be something other than 0
 
 ```json
 {
@@ -45,8 +48,8 @@ You may get the error_code by getting the run via its id.
     "started_at": "2024-09-12T15:57:09.786Z",
     "completed_at": "2024-09-12T15:57:09.786Z",
     "exec_parameters": {
-      "max_pixels": 0,
-      "scale": 0,
+      "max_pixels": 10000000000000,
+      "scale": 100,
       "best_effort": true
     },
     "variables": [],
