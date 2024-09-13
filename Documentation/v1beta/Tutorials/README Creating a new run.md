@@ -47,7 +47,7 @@ curl --location 'https://api.earthblox.io/v1beta/runs/' \
 --header 'Authorization: Bearer eyJhbGciO…' \
 --data '{ 
 "type": "template",
-"project_id":"S0rssl3ao8MvsV0gendJ_20230613", 
+"project_id":"project_id", 
 "exec_parameters": {
     "scale":150
 },
