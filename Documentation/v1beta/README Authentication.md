@@ -43,12 +43,18 @@ A name and description are required.
 
 #### Generating an API access token
 
-The `client_id` and `client_secret` do not expire and are used to generate a short-lived(1 hour) token. When your token expires, a new one can be generated using the same credentials. Please note,`grant type` is required and must be set to "client_credentials".
+The `client_id` and `client_secret` do not expire and are used to generate a short-lived(1 hour) token.
+Use the Authorisation header with basic authentication where your client id is the username and client secret is the password.
+When your token expires, a new one can be generated using the same credentials. Please note,`grant type` is required and must be set to "client_credentials".
+
+```bash
+echo -n "%CLIENT_ID%:%CLIENT_SECRET" | base64
 
 ```bash 
 curl --location 'https://api.earthblox.io/services/oauth/token' \
 --header 'Content-Type: application/json' \
---data '{"client_id":"%CLIENT_ID","client_secret":"%CLIENT_SECRET%", "grant_type":"client_credentials"}'
+--header 'Authorization: Basic %HASH%' \
+--data '{"grant_type":"client_credentials"}'
 ```
 
 The API can now be accessed with the token, see the tutorials on how to retrieve your projects, create a new run and access the outputs. 
