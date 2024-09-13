@@ -120,7 +120,7 @@ print(run_id)
 ```
 
 ```python
-#Python example with substitutions
+#Python example with variabls
 STUDY_AREA = {
   "type": "Feature",
   "geometry": {
