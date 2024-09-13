@@ -11,7 +11,7 @@
 ### Reference 
 1. [REST API](https://api.earthblox.io/docs)
 2. TODO [Python API]
-3. [Error Codes](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/Tutorials/README%20ErrorCodes.md)
+3. [Error Codes](https://github.com/earthblox-io/api-docs/blob/main/Documentation/v1beta/README%20ErrorCodes.md)
 4. [Change Log](https://github.com/earthblox-io/api-docs/blob/main/CHANGELOG.md)
 
 ### Examples
