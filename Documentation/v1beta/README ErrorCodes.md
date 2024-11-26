@@ -5,6 +5,7 @@ Error and Status code can be used in the API to determine the type of errors you
 These are used within the API to indicate an issue with the request.
 
 - 400 : bad request. review the error response for more detail.
+- 401 : unauthorised, the request token is not valid or has expired
 - 404 : resource was not found
 - 422 : validation error with request data
 - 426 : upgrade required, project is not available in the api version. update the project
