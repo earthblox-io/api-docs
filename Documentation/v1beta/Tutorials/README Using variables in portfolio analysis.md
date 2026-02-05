@@ -27,11 +27,11 @@ Example:
 
 ```json
 {
-            "name" : "protected_TABLE%", 
-            "description": "a test variable using a geojson as a dataset", 
-            "data_type" : "featureCollection", 
-            "_comment": "", 
-	    "default_value" :{"%GEOJSON%"} 
+    "name" : "protected_TABLE%", 
+    "description": "a test variable using a geojson as a dataset", 
+    "data_type" : "featureCollection", 
+    "_comment": "", 
+    "default_value" :{"%GEOJSON%"} 
 } 
 ```
 3. Add the variable to the variables array in the portfolio json. 
