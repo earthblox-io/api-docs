@@ -27,7 +27,7 @@ Example:
 
 ```json
 {
-    "name" : "protected_TABLE%", 
+    "name" : "protected_%TABLE%", 
     "description": "a test variable using a geojson as a dataset", 
     "data_type" : "featureCollection", 
     "_comment": "", 
