@@ -14,9 +14,13 @@ Steps:
 2. Construct a variable using your geojson it should include: 
 
 **name**: Required - Must be the table_id, this will be "protected..." 
+
 **data_type**: Required - Must be "featurecollection"
+
 **default_value**: Required - This will be your geojson
+
 **description**: Optional
+
 **_comment**: Optional 
 
 Example:
